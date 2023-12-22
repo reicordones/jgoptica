@@ -51,11 +51,10 @@
   background: white;
 }
 
-/*.caja{
-    width: 400px;
-    height: 300px;
-
-}*/
+.caja {
+  border-radius: 10px;
+  background-color: white;
+}
 .atencion img {
   padding: 20px;
   margin: 20px;
@@ -98,6 +97,19 @@
   font-size: 1.5rem;
   top: 350px;
   right: 80px;
+}
+
+.fondo {
+  background-image: url(../multimedia/sala.jpg);
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.presentacion {
+  margin-top: 80px;
+  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
