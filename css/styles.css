@@ -113,6 +113,9 @@
   .atencion p {
     font-size: 2.5vh;
   }
+  .navbar-text {
+    font-size: 12px;
+  }
 }
 .footer {
   background: rgb(20, 68, 36);
