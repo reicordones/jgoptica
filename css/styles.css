@@ -109,6 +109,11 @@
     visibility: hidden;
   }
 }
+@media (max-width: 576px) {
+  .atencion p {
+    font-size: 2.5vh;
+  }
+}
 .footer {
   background: rgb(20, 68, 36);
   background: linear-gradient(90deg, rgb(20, 68, 36) 0%, rgb(52, 161, 123) 100%);
