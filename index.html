@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JG OPTICA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,16 +14,40 @@
     <header>
       <nav class="navbar navbar-expand-lg  fixed-top">
         <div class="container-fluid d-block d-flex">
-          <a class="navbar-brand marca-primera" href="#">
+          <a class="navbar-brand marca-primer d-lg-none" href="#">
             <img src="./multimedia/logo jgoptica.png" alt="" width="120" height="120" class="d-inline-block align-text-top">
           </a>
-          <a class="navbar-brand marca-segunda" href="#">
-            <img src="./multimedia/logo jgoptica.png" alt="" width="120" height="120" class="d-inline-block align-text-top">
-          </a>
-          <a href="https://wa.link/70tgck" class="navbar-text ml-auto" target="_blank">Estamos a tu servicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#atencion">Atención</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cliente">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ubicacion">Estamos aquí</a>
+              </li>
+            </ul>
+            <a class="navbar-brand marca-segund d-none d-lg-block me-auto" href="#">
+              <img src="./multimedia/logo jgoptica.png" alt="" width="120" height="120" class="d-inline-block align-text-top">
+            </a>
+            <span class="navbar-text">
+              Estamos a tu servicio
+            </span>
+          </div>
         </div>
       </nav>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div>
+        <img class="img-fluid w-100 h-50 d-md-none" src="./multimedia/fondo-jg.png" alt="">
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./multimedia/gafas 1.png" class="d-block w-100" alt="...">
@@ -71,6 +95,7 @@
             </div>
         </section>
         <section class="container-fluid presentacion-green">
+            <a name="atencion" id="atencion"></a>
             <h2 class="title-white p-4">Una Atención Excepcional</h2>
             <div class="d-flex flex-wrap atencion justify-content-center align-items-center">
               <img class="vh-100 col-lg-4 col-12 col-sm-8 col-md-5" src="./multimedia/doctor_jacobo.jpg" alt="">
@@ -78,38 +103,44 @@
             </div>
         </section>
         <section class="container-fluid presentacion">
+          <a name="servicios" id="servicios"></a>
             <h2 class=" title p-4">Nuestros Servicios</h2>
             <div class="d-flex row flex-wrap justify-content-evenly container-fluid p-4">
               <articule class="card col-md-4" style="width: 18rem;">
                 <img src="./multimedia/examen-ocular.jpeg" class="card-img-top" alt="...">
-                <div class="card-body d-flex justify-content-center">
-                  <p class="card-text">Examen Visual</p>
+                <div class="card-body justify-content-center">
+                  <p class="card-text">Examen visual integral que incluye pruebas de agudeza, refracción y salud ocular para garantizar una visión óptima</p>
+                  <a href="#" class="btn btn-primary">Examen Visual</a>
                 </div>
               </articule>
               <articule class="card col-md-4" style="width: 18rem;">
                 <img src="./multimedia/gafas-grafico-ojos-sobre-fondo-blanco.png" class="card-img-top" alt="...">
-                <div class="card-body d-flex justify-content-center">
-                  <p class="card-text">Lentes Oftalmológicos</p>
+                <div class="card-body justify-content-center">
+                  <p class="card-text">Ofrecemos una amplia gama de opciones que se adaptan a diversas necesidades visuales, garantizando claridad y comodidad excepcionales</p>
+                  <a href="#" class="btn btn-primary">Lentes Oftalmológicos</a>
                 </div>
               </articule>
               <articule class="card col-md-4" style="width: 18rem;">
                 <img src="./multimedia/lentes-contacto.png" class="card-img-top" alt="...">
-                <div class="card-body d-flex justify-content-center">
-                  <p class="card-text">Lentes de Contacto</p>
+                <div class="card-body justify-content-center d-block align-content-center">
+                  <p class="card-text">Variedad de opciones para una visión clara y cómoda, adaptadas a estilos de vida activos y preferencias individuales</p>
+                  <a href="#" class="btn btn-primary ">Lentes de Contacto</a>
                 </div>
               </articule>
             </div>
         </section>
         <section class="container-fluid presentacion-green">
+            <a name="cliente" id="cliente"></a>
             <h2 class="title-white p-4">Nuestros clientes lo confirman</h2>
             <div class="d-flex justify-content-center">
                 <video class="video vh-100 p-4" src="./multimedia/video/clientes.mp4" controls></video>
             </div>
         </section>
         <section class="p-4 presentacion">
+          <a name="ubicacion" id="ubicacion"></a>
           <h2 class=" title p-4">Estamos Aquí</h2>
           <div class="d-flex flex-wrap align-items-center">
-            <p class="display-6 col-lg-6 col-sm-12 p-4">muy cerca de ti, estamos para servirte en la calle 19 #27-41, Local 2, Centro de Pasto</p>
+            <p class="display-6 col-lg-6 col-sm-12 p-4">Calle 19 #27-41, Local 2, Centro de Pasto</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.672496576828!2d-77.2790007!3d1.2171324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ed511738b8147%3A0xbc90581d99542634!2sJ.G%20%C3%B3ptica!5e0!3m2!1ses!2sco!4v1702657657707!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </section>

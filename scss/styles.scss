@@ -100,18 +100,6 @@
     text-shadow: rgba(0,0,0,0.3);
   }
 
-@media(min-width:992px){
-  .marca-primera{
-    visibility: hidden;
-  }
-}
-
-@media(max-width:992px){
-  .marca-segunda{
-    visibility: hidden;
-  }
-}
-
 @media(max-width:576px){
   .atencion p{
     font-size: 2.5vh;
@@ -183,4 +171,9 @@
 
   .card-text{
     font-size: 3vh;
+  }
+
+  .navbar-toggler-icon, .nav-link{
+    color: white;
+    
   }
