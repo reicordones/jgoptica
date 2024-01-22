@@ -5,18 +5,6 @@
   box-sizing: border-box;
 }
 
-/*.pagina {
-    background-image:url(../multimedia/fachada-jg.jpg);
-    max-width: max-content;
-
-}*/
-.titulo {
-  position: absolute;
-  top: 250px;
-  color: white;
-  font-size: 3.5rem;
-}
-
 .carousel {
   box-shadow: 0px 8px 10px rgb(63, 63, 63);
 }
